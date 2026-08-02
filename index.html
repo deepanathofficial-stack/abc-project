@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ABC Consultant — Strategy &amp; Growth Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="brand">
+      <span class="brand-mark">AC</span>
+      <span class="brand-name">ABC Consultant</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#enquiry" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Business &amp; Growth Consulting</p>
+      <h1>We turn <em>uncertain numbers</em><br>into a clear plan.</h1>
+      <p class="hero-sub">
+        ABC Consultant advises founders and operators on strategy, finance
+        and operations — with a bias for decisions you can act on this quarter.
+      </p>
+      <div class="hero-actions">
+        <a href="#enquiry" class="btn btn-primary">Start an enquiry</a>
+        <a href="#services" class="btn btn-ghost">What we do</a>
+      </div>
+    </div>
+
+    <div class="hero-graphic" aria-hidden="true">
+      <svg viewBox="0 0 460 320" class="growth-svg">
+        <line x1="30" y1="30" x2="30" y2="270" class="axis"/>
+        <line x1="30" y1="270" x2="440" y2="270" class="axis"/>
+        <path class="growth-path"
+          d="M30,230 C90,225 110,190 150,180 C200,168 220,120 270,105 C320,90 340,60 400,35"/>
+        <circle cx="400" cy="35" r="5" class="growth-dot"/>
+        <text x="345" y="20" class="growth-label">FY projection</text>
+      </svg>
+      <div class="stat-ticker">
+        <div><span class="stat-num">120+</span><span class="stat-label">engagements led</span></div>
+        <div><span class="stat-num">18</span><span class="stat-label">industries served</span></div>
+        <div><span class="stat-num">4.9</span><span class="stat-label">avg. client rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="services wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Three ways we work with you</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <h3>Strategy</h3>
+        <p>Market entry, pricing and growth planning grounded in your real unit economics, not a template deck.</p>
+      </article>
+      <article class="service-card">
+        <h3>Finance</h3>
+        <p>Budgeting, forecasting and fundraising support that holds up when an investor pushes back on it.</p>
+      </article>
+      <article class="service-card">
+        <h3>Operations</h3>
+        <p>Process and org design that removes the bottleneck you already know is there.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH (real sequence, numbering earned) ============ -->
+  <section id="approach" class="approach">
+    <div class="wrap">
+      <p class="eyebrow">Approach</p>
+      <h2>How an engagement runs</h2>
+      <ol class="approach-list">
+        <li>
+          <span class="step-no">01</span>
+          <div>
+            <h3>Discover</h3>
+            <p>We spend the first two weeks in your numbers and your team's heads — no recommendations yet.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-no">02</span>
+          <div>
+            <h3>Plan</h3>
+            <p>A short, specific plan with owners and dates — built to survive contact with your next board meeting.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-no">03</span>
+          <div>
+            <h3>Execute</h3>
+            <p>We stay in the room while it's implemented, not just for the slide that proposed it.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-no">04</span>
+          <div>
+            <h3>Grow</h3>
+            <p>We hand back a system your team can run without us — and check in on it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ENQUIRY ============ -->
+  <section id="enquiry" class="enquiry">
+    <div class="wrap enquiry-wrap">
+      <div class="enquiry-intro">
+        <p class="eyebrow">Enquiry</p>
+        <h2>Tell us where it hurts.</h2>
+        <p class="hero-sub">
+          Share a few details and a consultant will get back to you within one
+          business day.
+        </p>
+      </div>
+
+      <form id="enquiry-form" class="enquiry-form" novalidate>
+
+        <div class="field-tabs" role="tablist" aria-label="Enquiry detail fields">
+          <button type="button" class="field-tab is-active" data-target="tab-name" role="tab" aria-selected="true">Name</button>
+          <button type="button" class="field-tab" data-target="tab-phone" role="tab" aria-selected="false">Phone Number</button>
+          <button type="button" class="field-tab" data-target="tab-email" role="tab" aria-selected="false">Email ID</button>
+        </div>
+
+        <div class="field-panels">
+          <div class="field-panel is-active" id="tab-name" role="tabpanel">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Priya Raman" autocomplete="name" required>
+            <span class="field-error" id="err-name"></span>
+          </div>
+
+          <div class="field-panel" id="tab-phone" role="tabpanel">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" autocomplete="tel" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+
+          <div class="field-panel" id="tab-email" role="tabpanel">
+            <label for="email">Email id</label>
+            <input type="email" id="email" name="email" placeholder="e.g. priya@company.com" autocomplete="email" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+        </div>
+
+        <div class="field-full">
+          <label for="message">What are you looking to solve? <span class="optional">(optional)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="A line or two is enough to start."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">Submit enquiry</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span id="year"></span> ABC Consultant.</span>
+    <span>Strategy · Finance · Operations</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
